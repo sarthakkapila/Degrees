@@ -1,7 +1,7 @@
 # Degrees
 App that finds a connection between two actors bases on the movies they have starred in, using BFS algorithm.
 
-#Task
+# Task
 
 Write a program that determines how many "degrees of separation" apart two actors are, behaving as shown below:
 
@@ -14,7 +14,7 @@ Name: Jennifer Lawrence
 1: Emma Watson and Brendan Gleeson starred in Harry Potter and the Order of the Phoenix
 2: Brendan Gleeson and Michael Fassbender starred in Trespass Against Us
 3: Michael Fassbender and Jennifer Lawrence starred in X-Men: First Class
-#Background:
+# Background:
 
 According to the Six Degrees of Kevin Bacon game, anyone in the Hollywood film industry can be connected to Kevin Bacon within six steps, where each step consists of finding a film that two actors both starred in.
 
@@ -22,7 +22,7 @@ In this problem, we’re interested in finding the shortest path between any two
 
 We can frame this as a search problem: our states are people. Our actions are movies, which take us from one actor to another (it’s true that a movie could take us to multiple different actors, but that’s okay for this problem). Our initial state and goal state are defined by the two people we’re trying to connect. By using breadth-first search, we can find the shortest path from one actor to another.
 
-#Specification:
+# Specification:
 
 Complete the implementation of the shortest_path function such that it returns the shortest path from the person with id source to the person with the id target.
 
@@ -33,7 +33,7 @@ If there is no possible path between two actors, your function should return Non
 You may call the neighbors_for_person function, which accepts a person’s id as input, and returns a set of (movie_id, person_id) pairs for all people who starred in a movie with a given person.
 You should not modify anything else in the file other than the shortest_path function, though you may write additional functions and/or import other Python standard library modules.
 
-#Usage
+# Usage
 
 Requires Python(3) to run:
 
@@ -45,6 +45,6 @@ Large database usage:
 
 $ python degrees.py large OR $ python degrees.py
 
-#Acknowledgements
+# Acknowledgements
 
 Actor / Movie information courtesy of IMDb.
